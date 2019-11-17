@@ -1,0 +1,19 @@
+<div class="container-cards">
+        <div *ngIf="!allProjects; else allProjectsTemplate">
+            <p-card header="{{ project.name }}" subheader="{{ project.subtitle }}" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+                <p-header>
+                    <div class="container-img">
+                        <img src="Card" class="img-fluid" [src]="project.img">
+                    </div>
+                    <div class="frameworks" pTooltip="Frameworks" tooltipPosition="top">
+                        <span *ngFor="let framework of project.FRAMEWORKS">{{ framework.name }}</span>
+                    </div>
+                </p-header>
+                <div class="description">{{ project.description }}</div>
+                <p-footer>
+                    <button pButton type="button" label="Save" icon="pi pi-check" class="btn-card" style="margin-right: .25em"></button>
+                    <button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary"></button>
+                </p-footer>
+            </p-card>
+        </div>
+    </div>

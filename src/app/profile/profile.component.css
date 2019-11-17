@@ -1,0 +1,46 @@
+
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Slabo 27px', serif;
+*/
+.card-experence{
+    position: relative;
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
+.card-experence > div{
+    
+    margin: 3% 3% 3% 0;
+    width: 280px;
+}
+.img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 145px;
+}
+.img-fluid{
+    padding: 1%;
+    width: 225px;
+}
+
+.description{
+    height: 75px;
+    overflow: auto;
+    
+}
+.more-info{
+    height: 140px;
+    overflow: auto;
+}
+/* .card-experence > .ui-widget{
+    margin:10px
+} */
+.cad-content{
+    font-family: 'Roboto Slab', serif;  
+}

@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Slab|Slabo+27px&display=swap');
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Slabo 27px', serif;
+*/
+
+html{margin:0; padding: 0;}
+body{height: 100vh;}
+
+
+
+/* changing style from primeng */
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active{
+    background-color: #d44250;
+    border: 1px solid #e87575;
+}
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover{
+    border: 1px solid #dc3545;
+    background-color: #dc3545;
+}
+
+body .ui-tabview .ui-tabview-panels {
+    background-color: #f4f4f4;
+}
+
+body .ui-panelmenu .ui-panelmenu-header.ui-state-active > a {
+    border: 1px solid #347dbb;
+    background-color: #216192;
+    color: #ffffff;
+}
+

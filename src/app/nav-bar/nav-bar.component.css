@@ -1,0 +1,48 @@
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Slabo 27px', serif;
+*/
+
+.navbar-dark{
+    font-family: 'Roboto Slab', serif;
+}
+.navbar a:hover{
+    font-weight:bold;
+}
+.active a:hover{
+    font-weight:unset;
+}
+.logo-container{
+    position: relative;
+    color:#fff;
+    z-index: 10;
+}
+.logo-container::after{
+    position: absolute;
+    content: "Home";
+    top: 10px;
+    bottom: 10px;
+    left: 5px;
+    right: 0px;
+    opacity: 0;
+    transition: 700ms;
+}
+.logo-container:hover::after{
+    opacity: 1;
+    left: 60px;
+}
+
+.logo-container > img{
+    background-color: #fff;
+    padding: 9%;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 500ms;
+    width: 80%;
+    outline: none;
+}
+
+.logo-container > img:hover{
+    transform: rotate(180deg);
+}

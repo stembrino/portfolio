@@ -1,0 +1,12 @@
+.nivel{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    opacity: 0.5;
+}
+
+.container-logo{
+    display: flex;
+    margin-bottom: 5px;
+    width: min-content;
+}

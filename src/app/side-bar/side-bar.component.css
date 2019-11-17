@@ -1,0 +1,17 @@
+body .ui-panelmenu .ui-panelmenu-header > a {
+    background: blanchedalmond !important; 
+}
+
+.background-sidebar{
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 3px 0px #dedede;
+    margin-top: 2px;
+}
+
+
+/* @media screen and (max-width: 720px) {
+    .background-sidebar {
+        width: none;
+    }
+  } */
