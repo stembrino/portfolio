@@ -12,7 +12,7 @@ export const EXPERIENCES = [
         dataTermino: 'In Stage'
     },
     {
-        nomeEmpresa: 'H&C Empreendimentos',   
+        nomeEmpresa: 'MHC Empreendimentos',   
         localidade: 'Macaé, Rio de Janeiro',      
         cargo: 'Auxiliar de Pagamentos',    
         programacao: '',    
@@ -48,6 +48,12 @@ export const PROGRAMMING_LANGUAGES = [
         logo: 'angular',
         isFrameWork: true,
         nivel: 3
+    },   
+    {
+        nome: 'NodeJs',
+        logo: 'nodejs',
+        isFrameWork: true,
+        nivel: 3
     },
     {
         nome: 'Bootstrap',
@@ -77,7 +83,7 @@ export const PROGRAMMING_LANGUAGES = [
         nome: 'C#',
         logo: 'csharp',
         isFrameWork: false,
-        nivel: 2
+        nivel: 3
     },
     {
         nome: 'Java',
