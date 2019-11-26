@@ -1,0 +1,12 @@
+.content-weather{
+    display: flex;
+    justify-content: flex-end;
+}
+.content-weather span{
+    margin: 0.5rem;
+}
+.container-weather{
+    display: flex;
+    box-shadow: 0 0 2px 0.5px #9e9d9d;
+    margin-top: 1%;
+}

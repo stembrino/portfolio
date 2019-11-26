@@ -20,15 +20,14 @@ export class WeatherService{
         return this.http.get(`http://api.weatherstack.com/current?access_key=${KEY}&query=${location}`)
     }
 
-    public setWeather(weather:Weather){
-        this.weatherSubject.next(weather)
-        this.weatherSubject.subscribe((response)=>{
-            console.log(response)
-        })
-    }
+    // public setWeather(weather:Weather){
+    //     this.weatherSubject.next(weather)
+    //     this.weatherSubject.subscribe((response)=>{
+    //         console.log(response)
+    //     })
+    // }
 
-    public getWeather():Weather{
-        
+    // public getWeather():Weather{        
 
-    }
+    // }
 }
