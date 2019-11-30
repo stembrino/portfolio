@@ -6,7 +6,7 @@ import { Weather } from '../shared/Weather'
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css'],
-  providers: [WeatherService]
+  providers: []
 })
 export class NavBarComponent implements OnInit {
   public lisbonWeather:Array<any[]>

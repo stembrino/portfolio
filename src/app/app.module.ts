@@ -29,6 +29,7 @@ import {CardModule} from 'primeng/card';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
 import { AboutComponent } from './profile/about/about.component';
+import { WeatherService } from './services/weather.service';
 
 
 
@@ -61,7 +62,7 @@ import { AboutComponent } from './profile/about/about.component';
     TabViewModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [WeatherService],
   bootstrap: [AppComponent],
 
 })

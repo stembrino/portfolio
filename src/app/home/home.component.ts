@@ -7,7 +7,7 @@ import { Weather } from '../shared/Weather'
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [WeatherService]
+  providers: []
 })
 export class HomeComponent implements OnInit {
   public weather:Weather 
