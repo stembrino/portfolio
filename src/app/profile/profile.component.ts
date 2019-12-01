@@ -12,12 +12,11 @@ export class ProfileComponent implements OnInit {
   public profile: Profile
   public about:Array<any> = []
 
-  constructor(private profileService: ProfileService) { }
+  constructor(public profileService: ProfileService) { }
 
   ngOnInit() {
     this.profile = this.profileService.getProfile()    
     this.about = this.profile.getNivelLanguagesProgramming()
-    
 
   }
 

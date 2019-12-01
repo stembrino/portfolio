@@ -21,6 +21,7 @@
     "@angular/router": "~8.2.13",
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "popper": "^1.0.1",
     "popper.js": "^1.16.0",
     "primeicons": "^2.0.0",
     "primeng": "^8.1.1",

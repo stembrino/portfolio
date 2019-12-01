@@ -3,8 +3,8 @@ import { NivelProgramming } from './language.model'
 
 export class Profile {
     
-    private nivelLanguagesProgramming: NivelProgramming[] = []
-    private experiences: Experience[]=[]
+    public nivelLanguagesProgramming: NivelProgramming[] = []
+    public experiences: Experience[]=[]
 
     constructor(
         public name:string,

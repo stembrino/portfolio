@@ -9,26 +9,11 @@ import { Weather } from '../shared/Weather'
   providers: []
 })
 export class NavBarComponent implements OnInit {
-  public lisbonWeather:Array<any[]>
-  public weather:Weather 
-  public CITY = 'Lisbon'
-
+  
   constructor(private weatherService:WeatherService) { }
 
   ngOnInit() {
 
-    this.weather = new Weather('',null, null)
-    this.weatherService.serviceWeatherLisbon(this.CITY)
-      .subscribe((response:any)=>{
-        this.weather = new Weather(
-                                    response.location.name,
-                                    response.current.temperature,
-                                    response.current.wind_speed
-                                    )
-        this.weatherService.setWeather(this.weather)  
-        // console.log(this.weatherService.getWeather())
-      })     
-      
       
   }
 

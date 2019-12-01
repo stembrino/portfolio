@@ -10,11 +10,18 @@ import { Weather } from '../shared/Weather'
   providers: []
 })
 export class HomeComponent implements OnInit {
+  public lisbonWeather:Array<any[]>
   public weather:Weather 
+  public CITY = 'Lisbon'
   constructor(private weatherService:WeatherService) { }
 
   ngOnInit() {
-    this.weatherService.getWeather()      
+    this.weather = new Weather('',null, null)
+     this.weatherService.serviceWeatherLisbon(this.CITY)
+       .subscribe((response:Weather)=>{
+         this.weather = response  
+          
+        })
   }
 
 }

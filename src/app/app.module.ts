@@ -20,7 +20,6 @@ import { TooltipModule } from 'primeng/tooltip';
 import { ProfileComponent } from './profile/profile.component';
 import { MessageComponent } from './message/message.component';
 import { CardComponent } from './card/card.component';
-
 //PrimeNG
 import {PanelMenuModule} from 'primeng/panelmenu';
 import {MenuModule} from 'primeng/menu';
@@ -31,6 +30,7 @@ import {TabViewModule} from 'primeng/tabview';
 import { AboutComponent } from './profile/about/about.component';
 import { WeatherService } from './services/weather.service';
 
+import { convertKmNos } from '../assets/util/pipes/convert-km-nos'
 
 
 
@@ -46,7 +46,8 @@ import { WeatherService } from './services/weather.service';
     ProfileComponent,
     MessageComponent,
     CardComponent,
-    AboutComponent
+    AboutComponent,
+    convertKmNos
   ],
   imports: [
     BrowserModule,
