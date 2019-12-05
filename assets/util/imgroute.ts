@@ -1,0 +1,1 @@
+export const ROUTE_IMG_LANGAGES = './assets/images/logoProgramming/'
