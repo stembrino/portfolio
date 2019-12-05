@@ -1,22 +1,24 @@
-<div *ngFor='let object of about'>    
-   <div class="container-logo" data-toggle="tooltip" data-placement="right" title="{{object.name}}">
-       <div>
-           <img [src]="object.logo" style="width:48px;"> 
+<div class="container-about">
+    <div *ngFor='let object of about'>    
+       <div class="container-logo" data-toggle="tooltip" data-placement="right" title="{{object.name}}">
+           <div>
+               <img [src]="object.logo" style="width:48px;"> 
+           </div>
+           <div class="nivel">
+            <div *ngFor="let flag of nivelLength; index as i">
+                <div *ngIf="object.nivel > i;else emptyBall">
+                    <svg  width="15" height="14">                
+                        <circle cx="7" cy="7" r="5" stroke="#20272a" stroke-width="1" fill="#3a85bd" />                
+                    </svg> 
+                </div>
+                <ng-template #emptyBall>
+                    <svg  width="15" height="14">                
+                        <circle cx="7" cy="7" r="5" stroke="#20272a" stroke-width="1" fill="transparent" />                
+                    </svg> 
+                </ng-template>
+            </div>      
+           </div>
        </div>
-       <div class="nivel">
-        <div *ngFor="let flag of nivelLength; index as i">
-            <div *ngIf="object.nivel > i;else emptyBall">
-                <svg  width="15" height="14">                
-                    <circle cx="7" cy="7" r="5" stroke="#20272a" stroke-width="1" fill="#3a85bd" />                
-                </svg> 
-            </div>
-            <ng-template #emptyBall>
-                <svg  width="15" height="14">                
-                    <circle cx="7" cy="7" r="5" stroke="#20272a" stroke-width="1" fill="transparent" />                
-                </svg> 
-            </ng-template>
-        </div>      
-       </div>
-   </div>
-
+    
+    </div>
 </div>

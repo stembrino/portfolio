@@ -1,8 +1,9 @@
 .container-cards{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding-top: 2%;
-    padding-left: 15%;
+    padding-top: 5%;
 }
 .container-card{
     padding: 0 3% 3% 0;

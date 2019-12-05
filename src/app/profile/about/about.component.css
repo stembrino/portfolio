@@ -4,9 +4,15 @@
     margin-left: 5px;
     
 }
-
+.container-about{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 0 3% 3%;
+}
 .container-logo{
     display: flex;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     width: min-content;
 }

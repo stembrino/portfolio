@@ -24,13 +24,18 @@ import { CardComponent } from './card/card.component';
 import {PanelMenuModule} from 'primeng/panelmenu';
 import {MenuModule} from 'primeng/menu';
 import {CardModule} from 'primeng/card';
+import {VirtualScrollerModule} from 'primeng/virtualscroller';
 
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
 import { AboutComponent } from './profile/about/about.component';
 import { WeatherService } from './services/weather.service';
 
-import { convertKmNos } from '../assets/util/pipes/convert-km-nos'
+import { convertKmNos } from '../assets/util/pipes/convert-km-nos';
+import { AccessComponent } from './access/access.component';
+import { VirtualScrollerComponent } from './profile/virtual-scroller/virtual-scroller.component'
+import { CrtificeteService } from './services/certificate.service';
+import { ModalImgComponent } from './profile/virtual-scroller/modal-img/modal-img.component';
 
 
 
@@ -47,7 +52,10 @@ import { convertKmNos } from '../assets/util/pipes/convert-km-nos'
     MessageComponent,
     CardComponent,
     AboutComponent,
-    convertKmNos
+    convertKmNos,
+    AccessComponent,
+    VirtualScrollerComponent,
+    ModalImgComponent
   ],
   imports: [
     BrowserModule,
@@ -61,9 +69,10 @@ import { convertKmNos } from '../assets/util/pipes/convert-km-nos'
     TooltipModule,
     ScrollPanelModule,
     TabViewModule,
-    HttpClientModule
+    HttpClientModule,
+    VirtualScrollerModule
   ],
-  providers: [WeatherService],
+  providers: [WeatherService, CrtificeteService],
   bootstrap: [AppComponent],
 
 })

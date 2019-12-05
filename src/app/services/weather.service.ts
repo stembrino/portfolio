@@ -19,6 +19,7 @@ export class WeatherService{
 
 
     public serviceWeatherLisbon(location:string):Observable<any>{
+        
         const KEY:string = '92ded61a9e2ab4dc99643cc3b3f6c7a6'
         return this.http.get(`http://api.weatherstack.com/current?access_key=${KEY}&query=${location}`)
             .pipe(map((response:any)=>{

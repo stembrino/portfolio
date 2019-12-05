@@ -18,20 +18,8 @@ font-family: 'Slabo 27px', serif;
     color:#fff;
     z-index: 10;
 }
-.logo-container::after{
-    position: absolute;
-    content: "Home";
-    top: 10px;
-    bottom: 10px;
-    left: 5px;
-    right: 0px;
-    opacity: 0;
-    transition: 700ms;
-}
-.logo-container:hover::after{
-    opacity: 1;
-    left: 60px;
-}
+
+
 
 .logo-container > img{
     background-color: #fff;
@@ -43,6 +31,4 @@ font-family: 'Slabo 27px', serif;
     outline: none;
 }
 
-.logo-container > img:hover{
-    transform: rotate(180deg);
-}
+

@@ -14,8 +14,10 @@ export const ROUTES: Routes = [
         component:CardsComponent
     },
     {
-        path:'',
-        component: HomeComponent
+        path:'', redirectTo: 'profile', pathMatch: 'full' 
+    },
+    {
+        path:'home', redirectTo: 'profile', pathMatch: 'full' //alterar futuramente para aceder home
     },
     {
         path:'profile',

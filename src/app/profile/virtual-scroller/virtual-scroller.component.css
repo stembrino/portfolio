@@ -1,0 +1,14 @@
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Slabo 27px', serif;
+*/
+.content-certificate>div{
+    text-align: center;
+    height: 80px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.img-expand{
+    cursor: pointer;
+}
