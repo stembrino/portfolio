@@ -10,8 +10,33 @@
         </p-header>
         <div class="description">{{ project.description }}</div>
         <p-footer>
-            <button pButton type="button" label="Save" icon="pi pi-check" class="btn-card" style="margin-right: .25em"></button>
-            <button pButton type="button" label="Cancel" icon="pi pi-times" class="ui-button-secondary"></button>
+            <div *ngIf="project.name !== 'Beer Store'; else btnModal">
+                <button pButton (click)="navigateToSite(project.href)" type="button" label="Go to App" icon="pi pi-check" class="btn-card" style="margin-right: .25em">
+                    
+                </button>
+                
+            </div>
+            <ng-template #btnModal>
+                    <button pButton data-toggle="modal" data-target="#exampleModal" type="button" label="Watch a video" icon="pi pi-check" class="btn-card" style="margin-right: .25em"></button>   
+            </ng-template>
         </p-footer>
     </p-card>
     </div>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Final Project ATEC</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <iframe style="width: 100%;" height="260px" src="https://www.youtube.com/embed/1CeexB2hyMc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            </div>
+      
+      </div>
+    </div>
+  </div>

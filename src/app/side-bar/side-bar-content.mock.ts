@@ -9,16 +9,16 @@ export let CONTENT_SIDEBAR = [
         },    
         {
             label: 'Angular',
-            items: [
+            items: [               
                 {
-                    label: 'Do You Know?',
+                    label: 'Insta Clone',
                     icon: 'pi pi-fw pi-external-link',
-                    routerLink: ['/cards', 'Do You Know?']
+                    routerLink: ['/cards', 'Insta Clone']
                 },
                 {
-                    label: 'Passaro Urbano',
+                    label: 'PortfolioApp',
                     icon: 'pi pi-fw pi-external-link',
-                    routerLink: ['/cards', 'Passaro Urbano']
+                    routerLink: ['/cards', 'PortfolioApp']
                 }
             ]
     

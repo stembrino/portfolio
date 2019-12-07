@@ -5,7 +5,7 @@
 
     <p-tabPanel header="Experience">
             
-        <div class="card-experence">
+        <div class="card-experence">            
             <div *ngFor="let experience of profile.experiences">
                 <p-card>
                     <p-header>
@@ -48,5 +48,9 @@
         <app-virtual-scroller></app-virtual-scroller>
     </p-tabPanel>
 </p-tabView>
+
+<div class="container-btn-download">
+    <button class="btn-download-cv" [pTooltip]="txtTooltip" tooltipPosition="left">Download resume</button>
+</div>
 
     

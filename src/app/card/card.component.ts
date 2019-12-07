@@ -28,4 +28,10 @@ export class CardComponent implements OnInit {
 
   }
 
+
+  public navigateToSite(project:string){
+    window.open(project, '_blank');
+  }
+  
+
 }

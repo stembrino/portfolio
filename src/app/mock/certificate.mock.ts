@@ -37,7 +37,7 @@ export const CERTIFICATE = [
     },
     {
         name: 'Pontifícia Universidade Católica - PUC',
-        description: 'xyz',
+        description: 'Software project management',
         date: '2013',
         image: 'puc'
     },

@@ -30,15 +30,7 @@ export const EXPERIENCES = [
         dataInicio: '01/03/2013',   
         dataTermino: '01/08/2013'
     },
-    {
-        nomeEmpresa: 'Everis HPC',   
-        localidade: 'Lisboa',   
-        cargo: 'Estágio',    
-        programacao: 'Java; Jquery; Java Server Faces; PrimeFaces;',    
-        descricao: 'Suport the team',    
-        dataInicio: '02/092019',   
-        dataTermino: 'In Stage'
-    }
+    
 
 ]
 
@@ -103,6 +95,12 @@ export const PROGRAMMING_LANGUAGES = [
         isFrameWork: false,
         nivel: 4
     },
+    {
+        nome: 'Ubuntu',
+        logo: 'ubuntu',
+        isFrameWork: false,
+        nivel: 3
+    }
 ]
 
 export const PROFILE = {

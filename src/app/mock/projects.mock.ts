@@ -19,8 +19,9 @@ export const PROJECTS = [
         id: '1',
         name: 'List Mind',
         subtitle: 'Remember what I should buy',
-        description: 'The focus of this project, it\'s the market shop list, but also can be used to remember buy some another stuff. Besides, there is a Chat box to ask somethings that you would like to know',
+        description: 'The focus of this project, it\'s the market shop list, but also can be used to remember buy some another stuff. Besides, there is a Chat to ask somethings that you would like to know',
         img: 'assets/images/listmind.png',
+        href: 'https://listmind.herokuapp.com/',
         FRAMEWORKS: [
             {
                 name: 'JQuery'
@@ -40,19 +41,20 @@ export const PROJECTS = [
         
         ],
         LANGUAGES
-    },
+    },    
     {
         id: '2',
-        name: 'Do You know?',
-        subtitle: 'A question game',
-        description: 'The questions about politic and economic questions. The main objective of this project was begin in the JavaScript Angular framework',
+        name: 'Beer Store',
+        subtitle: 'Cheers',
+        description: 'This a simulator store about special beers. You can watch the site, click and check this out! ',
         img: 'assets/images/question.png',
+        href: 'none',
         FRAMEWORKS: [
             {
-                name: 'Angular'
+                name: 'Bootstrap'                
             },
             {
-                name: 'Bootstrap'
+                name: 'Asp.Net'                
             }
             
         
@@ -62,16 +64,40 @@ export const PROJECTS = [
     },
     {
         id: '3',
-        name: 'Beer Store',
-        subtitle: 'Cheers',
-        description: 'This a simulator store about special beers. You can watch the site through YouTube, click and check this out! ',
-        img: 'assets/images/question.png',
+        name: 'Insta Clone',
+        subtitle: 'Simulate a social App',
+        description: 'This site was built in order to learn the Firebase tools',
+        img: 'assets/images/instagram.png',
+        href: 'https://instaclone-cf166.firebaseapp.com/',
         FRAMEWORKS: [
             {
                 name: 'Bootstrap'                
             },
             {
-                name: 'Asp.Net'                
+                name: 'Angular'                
+            }
+            
+        
+        ],
+        LANGUAGES
+        
+    },
+    {
+        id: '4',
+        name: 'PortfolioApp',
+        subtitle: 'Presentation Site',
+        description: 'It was developed to store all my projects, from the basic project to the most advanced.Also, It\'s responsive in all devices mainly cell and desktops',
+        img: 'assets/images/html-image.png',
+        href: 'https://stembrino.github.io/portfolio',
+        FRAMEWORKS: [
+            {
+                name: 'Angular'                
+            },
+            {
+                name: 'Primefaces'                
+            },
+            {
+                name: 'Bootstrap'                
             }
             
         

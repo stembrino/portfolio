@@ -10,6 +10,7 @@ import { Profile } from '../shared/Profile.model'
 })
 export class ProfileComponent implements OnInit {
   public profile: Profile
+  public txtTooltip = 'To see all my experences (It isn\'t work yet)'
   public about:Array<any> = []
 
   constructor(public profileService: ProfileService) { }

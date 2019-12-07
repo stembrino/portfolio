@@ -44,3 +44,39 @@ font-family: 'Slabo 27px', serif;
 .cad-content{
     font-family: 'Roboto Slab', serif;  
 }
+
+.container-btn-download{
+    position: absolute;
+    top:8px;
+    right: 20px;
+}
+.btn-download-cv{
+    all: unset;
+    color: #0073b1;
+    box-shadow: inset 0 0 1px 2px #0073b1;
+    background-color: white;
+    width: 10em;
+    height: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-download-cv:hover{
+    font-weight: bold;
+}
+
+
+
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 545px) {
+    .container-btn-download{
+        position: relative; 
+        display: grid;
+        place-items: center;
+        margin-bottom: 3%;      
+    }
+}
+  
