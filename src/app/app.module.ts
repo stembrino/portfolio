@@ -29,13 +29,13 @@ import {VirtualScrollerModule} from 'primeng/virtualscroller';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
 import { AboutComponent } from './profile/about/about.component';
-import { WeatherService } from './services/weather.service';
 
 import { convertKmNos } from '../assets/util/pipes/convert-km-nos';
 import { AccessComponent } from './access/access.component';
 import { VirtualScrollerComponent } from './profile/virtual-scroller/virtual-scroller.component'
 import { CrtificeteService } from './services/certificate.service';
 import { ModalImgComponent } from './profile/virtual-scroller/modal-img/modal-img.component';
+import { NewsService } from './services/news.service';
 
 
 
@@ -72,7 +72,7 @@ import { ModalImgComponent } from './profile/virtual-scroller/modal-img/modal-im
     HttpClientModule,
     VirtualScrollerModule
   ],
-  providers: [WeatherService, CrtificeteService],
+  providers: [CrtificeteService, NewsService],
   bootstrap: [AppComponent],
 
 })

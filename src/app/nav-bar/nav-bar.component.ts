@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from '../services/weather.service'
-import { Weather } from '../shared/Weather'
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +8,7 @@ import { Weather } from '../shared/Weather'
 })
 export class NavBarComponent implements OnInit {
   
-  constructor(private weatherService:WeatherService) { }
+  constructor() { }
 
   ngOnInit() {
 

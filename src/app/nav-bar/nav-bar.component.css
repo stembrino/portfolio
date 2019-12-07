@@ -26,7 +26,6 @@ font-family: 'Slabo 27px', serif;
     padding: 9%;
     border-radius: 30px;
     cursor: pointer;
-    transition: 500ms;
     width: 80%;
     outline: none;
 }

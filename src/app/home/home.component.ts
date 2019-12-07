@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from '../services/weather.service'
-import { Weather } from '../shared/Weather'
+import { NewsService } from '../services/news.service';
+import { News } from '../shared/news.mode';
 
 
 @Component({
@@ -10,18 +10,24 @@ import { Weather } from '../shared/Weather'
   providers: []
 })
 export class HomeComponent implements OnInit {
-  public lisbonWeather:Array<any[]>
-  public weather:Weather 
-  public CITY = 'Lisbon'
-  constructor(private weatherService:WeatherService) { }
+  public newsList:News[] = []
+  constructor(private newService:NewsService) { }
 
   ngOnInit() {
-    this.weather = new Weather('',null, null)
-     this.weatherService.serviceWeatherLisbon(this.CITY)
-       .subscribe((response:Weather)=>{
-         this.weather = response  
-          
-        })
+    
+    this.newService.getNews()
+    .subscribe((response:any)=>{
+      response.articles.forEach((element) => {
+          this.newsList.push(new News(
+              element.title, element.content, element.description,
+              element.urlToImage          
+            ))
+      }); 
+       console.log(this.newsList)
+    })
+
+       
+      
   }
 
 }

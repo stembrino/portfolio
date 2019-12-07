@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component'
 import { ProfileComponent } from './profile/profile.component'
 import { MessageComponent } from './message/message.component'
 import { CardComponent } from './card/card.component'
+import { Component } from '@angular/core'
 export const ROUTES: Routes = [
     {
         path:'cards/:nomeProjeto',
@@ -14,10 +15,11 @@ export const ROUTES: Routes = [
         component:CardsComponent
     },
     {
-        path:'', redirectTo: 'profile', pathMatch: 'full' 
+        path:'', redirectTo: 'home', pathMatch: 'full' 
     },
     {
-        path:'home', redirectTo: 'profile', pathMatch: 'full' //alterar futuramente para aceder home
+        path:'home',
+        component: HomeComponent
     },
     {
         path:'profile',
