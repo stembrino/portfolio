@@ -1,5 +1,60 @@
 <ul class="list-group list-group-flush">
-    <li *ngFor="let news of newsList" class="list-group-item">
-        <img [src]="news.urlToImage" class="image-fluid img-thumbnail image-news">
-    </li>   
+    <div class="all-content-welcome">
+        <div [@animation-title-news]="state"  class="welcome">welcome to my portfolio</div>
+        <div [@animation-content-news]="state"  class="content-welcome">
+            <div>Content</div>
+            <div>Download my resume (mantenecement)</div>
+            <div>skills and certificates in "profile" button navigation bar</div>
+            <div>Projects in the side bar</div>    
+            <div>Send a Massege (mantenecement)</div> 
+        </div>
+    
+    </div>
+    <div *ngIf="loaded !== 100">
+        <p-progressBar [value]="loaded"></p-progressBar>
+    </div>
+
+    <div [@animation-news]="state" >
+        <div class="title-header">today's advances news about the world of Information Technology </div>
+
+        <li *ngFor="let news of newsList" class="list-group-item">
+            <a (click)="openModalNews(news.urlToImage, news.content, news.urlSourceNews)" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#exampleModal">
+                <div class="row">
+                    <div class="col-sm-5 col-md-4 col-lg-3">
+                        <img [src]="news.urlToImage" class="image-fluid img-thumbnail image-news">
+                    </div>
+                    <div class="col-sm-7 col-md-8 col-lg-9">
+                        <div class="conten-news">
+                            <span class="title-news">{{ news.title }}</span>
+                            <br>
+                            <span class="news-body">{{ news.description }}</span>
+                        </div>                
+                    </div>            
+                </div>
+            </a>
+        </li>  
+    </div> 
 </ul>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">        
+        <div class="modal-body news-body">
+            <div class="content-modal-news">
+                <div class="img-news-modal">
+                    <img [src]="imgNewsModal" class="image-fluid img-thumbnail image-news" style="opacity: 1;">
+                </div>
+                <div style="margin-bottom: 2%;">{{ contentNewsModal }}</div>
+                <small>See more in:</small>
+                <small><a [href]="url" target="_blank">{{ url }}</a></small>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn-close-modal" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+    </div>

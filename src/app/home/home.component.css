@@ -1,6 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
-
+/* 
+font-family: 'Roboto Slab', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Slabo 27px', serif;
+*/
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
 .image-news{
     width:250px;
     opacity: 0.8;
 }
+
+.news-body{
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.9em;
+}
+.title-news{
+    font-family: 'Merriweather', serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+.btn-close-modal{
+    all: unset;
+    color: #0073b1;
+    box-shadow: inset 0 0 1px 2px #0073b1;
+    background-color: white;
+    width: auto;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 1% 2% 1% 2%;
+}
+.btn-close-modal:hover{
+    font-weight: bold;
+}
+
+.title-header{
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 3%;
+}
+
+.img-news-modal{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.all-content-welcome{
+    margin-top: 3%;
+    margin-bottom: 1%;
+    display: grid;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    cursor: default;
+}
+.welcome{
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    
+}
+.content-welcome{
+    font-size: 1em;
+
+}
+
+
+

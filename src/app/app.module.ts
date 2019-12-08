@@ -10,7 +10,7 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { ROUTES } from './app.routes'
 import { RouterModule } from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+//load progress bar
 //components
 import { HomeComponent } from './home/home.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component'
@@ -25,6 +25,7 @@ import {PanelMenuModule} from 'primeng/panelmenu';
 import {MenuModule} from 'primeng/menu';
 import {CardModule} from 'primeng/card';
 import {VirtualScrollerModule} from 'primeng/virtualscroller';
+import {ProgressBarModule} from 'primeng/progressbar';
 
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
@@ -70,7 +71,9 @@ import { NewsService } from './services/news.service';
     ScrollPanelModule,
     TabViewModule,
     HttpClientModule,
-    VirtualScrollerModule
+    VirtualScrollerModule,
+    ProgressBarModule
+      
   ],
   providers: [CrtificeteService, NewsService],
   bootstrap: [AppComponent],
