@@ -2,6 +2,11 @@
     margin:0;
     height: 90%;
 }
+@media screen and (max-width: 767px) {
+    .row{
+        height: 0;
+    }
+  }
 .size-control{
     padding: 0;
 }

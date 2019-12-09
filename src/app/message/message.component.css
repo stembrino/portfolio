@@ -1,0 +1,22 @@
+.container-message{
+    margin-top:1.5em;
+}
+input{
+    width: 90%;
+}
+
+.txt-area-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    width: 95%;
+}
+.txt-area-message>textarea{
+    width: 100%;
+}
+@media screen and (max-width: 575px) {
+    .mg-medi-query{
+        margin-top:2em;
+    }
+  }

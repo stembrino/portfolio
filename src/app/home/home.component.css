@@ -52,10 +52,6 @@ a{
     margin-bottom: 3%;
 }
 .all-content-welcome{
-    margin-top: 3%;
-    margin-bottom: 1%;
-    display: grid;
-    justify-content: center;
     font-family: 'Roboto Slab', serif;
     cursor: default;
 }
@@ -67,7 +63,18 @@ a{
 }
 .content-welcome{
     font-size: 1em;
+    margin-left: 5%;
+    margin-top: 2%;
 
+}
+.content-welcome>li{
+    list-style-type:circle;
+}
+
+.card-content{
+    display: grid;
+    justify-content: center;
+    background-color: #f4f4f43d;
 }
 
 

@@ -26,6 +26,9 @@ import {MenuModule} from 'primeng/menu';
 import {CardModule} from 'primeng/card';
 import {VirtualScrollerModule} from 'primeng/virtualscroller';
 import {ProgressBarModule} from 'primeng/progressbar';
+import {InputTextModule} from 'primeng/inputtext';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+
 
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
@@ -72,8 +75,9 @@ import { NewsService } from './services/news.service';
     TabViewModule,
     HttpClientModule,
     VirtualScrollerModule,
-    ProgressBarModule
-      
+    ProgressBarModule,
+    InputTextModule,
+    InputTextareaModule
   ],
   providers: [CrtificeteService, NewsService],
   bootstrap: [AppComponent],

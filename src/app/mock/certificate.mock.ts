@@ -7,9 +7,9 @@ export const CERTIFICATE = [
     },
     {
         name: 'Udemy',
-        description: 'Angular & Typescript & Javascipt ES5',
+        description: 'Angular & Typescript & Javascipt ES6',
         date: '11/2019',
-        image: 'none'
+        image: 'angular'
     },
     {
         name: 'ATEC',
