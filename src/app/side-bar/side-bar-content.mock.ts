@@ -19,6 +19,11 @@ export let CONTENT_SIDEBAR = [
                     label: 'PortfolioApp',
                     icon: 'pi pi-fw pi-external-link',
                     routerLink: ['/cards', 'PortfolioApp']
+                },
+                {
+                    label: 'MasterMind',
+                    icon: 'pi pi-fw pi-external-link',
+                    routerLink: ['/cards', 'MasterMind']
                 }
             ]
     

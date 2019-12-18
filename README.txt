@@ -8,6 +8,9 @@ tem q estar assim
 
  sudo angular-cli-ghpages
 
+
+
+
  ##publicar no forebase 
  firebase init
  #analisar se o projeto comeca em dist/nomeApp ou dist/

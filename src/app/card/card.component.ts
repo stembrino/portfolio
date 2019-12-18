@@ -17,11 +17,9 @@ export class CardComponent implements OnInit {
     const param = this.route.params.subscribe((response:any)=>{      
       //futuro service
       this.allProjects = response.nomeProjeto === 'all'? true:false
-      console.log(this.allProjects) 
       PROJECTS.forEach(project=>{
         if(project.name.toLowerCase() === response.nomeProjeto.toLowerCase()){
           this.project = project
-          console.log(this.project)
         }
       })
     })

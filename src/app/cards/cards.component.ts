@@ -14,7 +14,6 @@ export class CardsComponent implements OnInit {
 
   constructor(public route: ActivatedRoute) { 
     this.projects = PROJECTS
-    console.log(this.projects)
   }
 
   ngOnInit() {

@@ -1,24 +1,38 @@
-<div class="container-message">
-    <div class="row">
-        <div class="col-sm-6 col-md-6 mg-medi-query">
-            <span class="ui-float-label">
-                <input id="float-input" type="text" size="30" pInputText> 
-                <label for="float-input">Name</label>
-            </span>
+<form [formGroup]="formMessage">
+    <div class="container-message">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 mg-medi-query">
+                <span class="ui-float-label">
+                    <input 
+                        id="float-input" 
+                        type="text" 
+                        formControlName="name"
+                        pInputText> 
+                    <label for="float-input">Name</label>
+                </span>
+            </div>
+            <div class="col-sm-6 col-md-6 mg-medi-query">
+                <span class="ui-float-label">
+                    <input 
+                        id="float-input" 
+                        type="text" 
+                        formControlName="email"
+                        pInputText> 
+                    <label for="float-input">E-mail</label>
+                </span>
+            </div>    
         </div>
-        <div class="col-sm-6 col-md-6 mg-medi-query">
-            <span class="ui-float-label">
-                <input id="float-input" type="text" size="30" pInputText> 
-                <label for="float-input">E-mail</label>
-            </span>
-        </div>    
-    </div>
-    <div class="row">
-        <div class="col">
-            <span class="ui-float-label txt-area-message">
-                <textarea rows="5" cols="30" pInputTextarea autoResize="autoResize"></textarea>
-                <label for="float-input">Message</label>
-            </span>
+        <div class="row">
+            <div class="col">
+                <span class="ui-float-label txt-area-message">
+                    <textarea 
+                        rows="5" cols="30" 
+                        formControlName="message"
+                        pInputTextarea 
+                        autoResize="autoResize"></textarea>
+                    <label for="float-input">Message</label>
+                </span>
+            </div>
         </div>
     </div>
-</div>
+</form>

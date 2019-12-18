@@ -104,6 +104,38 @@ export const PROJECTS = [
         ],
         LANGUAGES
         
+    },
+    {
+        id: '5',
+        name: 'MasterMind',
+        subtitle: 'Old_School Game',
+        description: 'It\'s a old good tabke game. If you would like to exercise your mind, check it out!',
+        img: 'assets/images/mastermind.png',
+        href: 'https://stembrino.github.io/MasterMind',
+        FRAMEWORKS: [
+            {
+                name: 'Angular'                
+            },
+            {
+                name: 'Material'                
+            },
+            {
+                name: 'Bootstrap'                
+            },
+            {
+                name: 'TypeScript'
+            },
+            {
+                name: 'Javascript'
+            },
+            {
+                name: 'Css'
+            }
+            
+        
+        ],
+        LANGUAGES
+        
     }
 
 ]

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +41,9 @@ import { VirtualScrollerComponent } from './profile/virtual-scroller/virtual-scr
 import { CrtificeteService } from './services/certificate.service';
 import { ModalImgComponent } from './profile/virtual-scroller/modal-img/modal-img.component';
 import { NewsService } from './services/news.service';
+//Zorro
+import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
+import { NzPaginationModule } from 'ng-zorro-antd/pagination';
 
 
 
@@ -77,9 +81,13 @@ import { NewsService } from './services/news.service';
     VirtualScrollerModule,
     ProgressBarModule,
     InputTextModule,
-    InputTextareaModule
+    InputTextareaModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgZorroAntdModule,
+    NzPaginationModule
   ],
-  providers: [CrtificeteService, NewsService],
+  providers: [CrtificeteService, NewsService, { provide: NZ_I18N, useValue: en_US }  ],
   bootstrap: [AppComponent],
 
 })

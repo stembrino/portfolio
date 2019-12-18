@@ -16,16 +16,16 @@
             </div>
         </div>
     </div>
-
-    
-    <div *ngIf="loaded !== 100">
+    <div *ngIf="!closeBar">
         <p-progressBar [value]="loaded"></p-progressBar>
     </div>
-
+    
     <div [@animation-news]="state" >
         <div class="title-header">today's advances news about the world of Information Technology </div>
-
-        <li *ngFor="let news of newsList" class="list-group-item">
+            <div class="paginator">
+                <nz-pagination (nzPageIndexChange)="testAlert($event)" [nzPageSize]="numberOfItemPage" [nzPageIndex]="1" [nzTotal]="newsList.length"></nz-pagination>
+            </div>
+        <li *ngFor="let news of page" class="list-group-item" [@animation-news-page]="state">
             <a (click)="openModalNews(news.urlToImage, news.content, news.urlSourceNews)" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#exampleModal">
                 <div class="row">
                     <div class="col-sm-5 col-md-4 col-lg-3">
@@ -41,8 +41,11 @@
                 </div>
             </a>
         </li>  
-    </div> 
+
+    </div>
+
 </ul>
+
 
 
 

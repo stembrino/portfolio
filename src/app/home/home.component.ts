@@ -19,6 +19,13 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
         animate('2s 3s ease-in-out') //duracao, delay, aceleracao (ease)
       ])
     ]),
+    trigger('animation-news-page', [
+      state('create', style({opacity: 1})),
+      transition('void => create', [
+        style({opacity: 0, transform: 'translate(100px, 0)'}), //x e y // estilo do void
+        animate('1s ease-in-out') //duracao, delay, aceleracao (ease)
+      ])
+    ]),
     trigger('animation-title-news', [
       state('create', style({opacity: 1})),
       transition('void => create', [
@@ -34,6 +41,7 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
       ])
     ]),
     
+    
   ]
 })
 export class HomeComponent implements OnInit {
@@ -44,12 +52,21 @@ export class HomeComponent implements OnInit {
   public url:string = ''
   public loaded:number = 0
   public state:string="create"
+  public numberOfItemPage = 3
+  public page:News[]=[]
+  public closeBar:boolean = false
   ngOnInit() {
     
+
     this.newService.getNews()
       .subscribe((event:any)=>{
         if (event.type === HttpEventType.DownloadProgress) {
             this.loaded = Math.round(event.loaded/event.total*100)
+            if(this.loaded === 100){
+              setTimeout(()=>{
+                this.closeBar=true
+              },1500 )
+            }
         }
         if (event.type === HttpEventType.Response) {
           event.body.articles.forEach((element) => {
@@ -58,21 +75,14 @@ export class HomeComponent implements OnInit {
               element.urlToImage, element.url          
             ))
             }); 
-          console.log(this.newsList)
+            //iniciar com 5 primeiras notícias
+            this.page = this.newsList.slice(0, this.numberOfItemPage)
         }
 
       
       })
 
-    // .subscribe((response:any)=>{
-    //   event.articles.forEach((element) => {
-    //       this.newsList.push(new News(
-    //           element.title, element.content, element.description,
-    //           element.urlToImage, element.url          
-    //         ))
-    //   }); 
-    //    console.log(this.newsList)
-    // })
+  
 
   }
 
@@ -81,5 +91,22 @@ export class HomeComponent implements OnInit {
     this.contentNewsModal = content
     this.url = url
   }
+
+
+  public testAlert(numberOfPage){
+    
+    const start = (numberOfPage-1)*this.numberOfItemPage
+    const end =  numberOfPage*this.numberOfItemPage
+    this.page = this.newsList.slice( start, end)
+    
+  }
+
+
+
+  
+  
+  
+  
+  
 
 }
