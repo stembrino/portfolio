@@ -1,0 +1,47 @@
+<div class="container-card-experience">
+    <div class="card-experence">            
+        <div *ngFor="let experience of profile.experiences">
+            <p-card>
+                <p-header>
+                    <div class="header">
+                        <div class="date">
+                            <small>{{ experience.startDate}}</small>
+                            <br>
+                            <small>{{ experience.finishDate }}</small>
+                        </div>
+                        <div class="org-name">
+                            {{ experience.organizationName }}
+                            <br>
+                            <small>({{ experience.area }})</small>
+                        </div>
+                    </div>
+                </p-header>
+                <div class="cad-content">
+                    <div class="position">
+                        <span class="postion-text">Position:</span>{{ experience.position }}
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li *ngFor="let desc of experience.description">
+                                <small>{{ desc }}</small>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p-footer>
+                    <div class="footer-content">
+                        <div class="location">
+                            {{ experience.address }}
+                        </div>
+                        <div class="logo">
+                            <div *ngIf="experience.image">
+                                <img [src]='experience.image' class="img-fluid img-logo">
+                            </div>
+                        </div>
+                    </div>
+                </p-footer>
+    
+            </p-card>
+        </div>
+    </div>
+</div>

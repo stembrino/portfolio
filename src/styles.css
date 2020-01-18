@@ -32,3 +32,8 @@ body .ui-panelmenu .ui-panelmenu-header.ui-state-active > a {
     color: #ffffff;
 }
 
+.bg-dark {   
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000c7);
+}
+

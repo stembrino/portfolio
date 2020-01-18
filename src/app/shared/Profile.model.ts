@@ -6,11 +6,7 @@ export class Profile {
     public nivelLanguagesProgramming: NivelProgramming[] = []
     public experiences: Experience[]=[]
 
-    constructor(
-        public name:string,
-        public description: string,
-        // public experiences:Experience[]        
-        ){
+    constructor(){
     }
    
     public addNivelLanguagesProgramming(nome:string, logo: string, isFrameWork:boolean, nivel:number):Array<NivelProgramming>{
@@ -23,9 +19,9 @@ export class Profile {
         return this.nivelLanguagesProgramming;
     }
 
-    public addExperiences(organizationName:string, image:string, address:string, position:string, programmingLanguages: string, description:string, startDate:string, finishDate:string): Array<Experience>{
+    public addExperiences(organizationName:string, image:string, address:string, position:string, programmingLanguages: string[], description:string[], startDate:string, finishDate:string, area:string ): Array<Experience>{
         this.experiences.push(
-            new Experience(organizationName, image, address, position, programmingLanguages, description, startDate, finishDate)
+            new Experience(organizationName, image, address, position, programmingLanguages, description, startDate, finishDate, area)
         )
         return this.experiences
     }

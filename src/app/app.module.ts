@@ -44,6 +44,8 @@ import { NewsService } from './services/news.service';
 //Zorro
 import { NgZorroAntdModule, NZ_I18N, en_US } from 'ng-zorro-antd';
 import { NzPaginationModule } from 'ng-zorro-antd/pagination';
+import { ExperiencesComponent } from './profile/experiences/experiences.component';
+import { ProfileService } from './services/profile.service';
 
 
 
@@ -63,7 +65,8 @@ import { NzPaginationModule } from 'ng-zorro-antd/pagination';
     convertKmNos,
     AccessComponent,
     VirtualScrollerComponent,
-    ModalImgComponent
+    ModalImgComponent,
+    ExperiencesComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +90,7 @@ import { NzPaginationModule } from 'ng-zorro-antd/pagination';
     NgZorroAntdModule,
     NzPaginationModule
   ],
-  providers: [CrtificeteService, NewsService, { provide: NZ_I18N, useValue: en_US }  ],
+  providers: [CrtificeteService, NewsService, { provide: NZ_I18N, useValue: en_US }, ProfileService  ],
   bootstrap: [AppComponent],
 
 })

@@ -6,11 +6,10 @@ import { Profile } from '../shared/Profile.model'
   selector: 'app-profile',
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.css'],
-  providers: [ProfileService]
+  providers: []
 })
 export class ProfileComponent implements OnInit {
   public profile: Profile
-  public txtTooltip = 'To see all my experences (It isn\'t work yet)'
   public about:Array<any> = []
 
   constructor(public profileService: ProfileService) { }

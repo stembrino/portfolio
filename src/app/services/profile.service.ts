@@ -12,12 +12,12 @@ export class ProfileService{
     constructor(private http: HttpClient){}
 
     public getProfile(): Profile{
-        //sumulando um pedido http, porém seria utilizando um arequisicao com http e retornaria um promise ou um Observable
         
-        
-        const profile = new Profile(PROFILE.nome, PROFILE.descricao)
 
-        PROFILE.EXPERIENCES.forEach((experience, i)=>{
+        const profile = new Profile()
+
+        PROFILE.EXPERIENCES.forEach((experience)=>{
+            
             profile.addExperiences(            
                 experience.nomeEmpresa,
                 experience.imagem,
@@ -26,7 +26,8 @@ export class ProfileService{
                 experience.programacao,
                 experience.descricao,
                 experience.dataInicio,
-                experience.dataTermino)
+                experience.dataTermino,
+                experience.area)
             
         })        
 

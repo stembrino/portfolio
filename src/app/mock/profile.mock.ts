@@ -5,30 +5,55 @@ export const EXPERIENCES = [
         nomeEmpresa: 'Everis HPC',
         imagem: caminho+'everis.jpeg',   
         localidade: 'Lisboa',   
-        cargo: 'Estágio',    
-        programacao: 'Java; Jquery; Java Server Faces; PrimeFaces;',    
-        descricao: 'Suport the team',    
+        cargo: 'Developer Frontend Internship',    
+        programacao: ['Java', 'Javascript','Angular'],    
+        descricao: ['Support the team with developing web pages', 'Understand routine and work methodology','Application documentation review using office tools'],    
         dataInicio: '02/09/2019',   
-        dataTermino: 'In Stage'
+        dataTermino: '02/12/2019',
+        area: 'programming'
     },
     {
         nomeEmpresa: 'MHC Empreendimentos',   
         localidade: 'Macaé, Rio de Janeiro',      
-        cargo: 'Auxiliar de Pagamentos',    
-        programacao: '',    
-        descricao: ' auxiliar nas atividades de pagamsentos referente às operações realizadas nos projetos desenvolvidos suporte nas atividades de compras',    
+        cargo: 'Assistance Payment',    
+        programacao: [],    
+        descricao: ['Assist in payment activities related to project operations developed'],
         dataInicio: '01/02/2015',   
-        dataTermino: '01/11/2017'
+        dataTermino: '01/11/2017',
+        area: 'business administration'
     },
     {
         nomeEmpresa: 'Lojas Americanas',   
         localidade: 'Rio de Janeiro',   
         imagem: caminho+'americanas.jpg',   
-        cargo: 'Trainee',    
-        programacao: '',    
-        descricao: 'Suport the team',    
-        dataInicio: '01/03/2013',   
-        dataTermino: '01/08/2013'
+        cargo: 'Store Assistant',    
+        programacao: [],    
+        descricao: ['Support in store operations', 'Cashier', 'Activities of storeroom organization'],    
+        dataInicio: '11/2013',   
+        dataTermino: '08/2014',
+        area: 'business administration'
+    },
+    {
+        nomeEmpresa: 'Casa & Vídeo Ltda',   
+        localidade: 'Rio de Janeiro',   
+        imagem: caminho+'casavideo.png',   
+        cargo: 'Backoffice Assistant',    
+        programacao: [],    
+        descricao: ['Monitoring of store activities', 'Preparation of weekly store performance reports'],    
+        dataInicio: '09/2012',   
+        dataTermino: '09/2013',
+        area: 'business administration'
+    },
+    {
+        nomeEmpresa: 'Nicomex Logística Ltda',   
+        localidade: 'Rio de Janeiro',   
+        imagem: caminho+'nicomex.png',   
+        cargo: 'Account trainee',    
+        programacao: [],    
+        descricao: ['Data update in the accounting information system'],    
+        dataInicio: '09/2012',   
+        dataTermino: '09/2013',
+        area: 'business administration'
     },
     
 
@@ -98,6 +123,12 @@ export const PROGRAMMING_LANGUAGES = [
     {
         nome: 'Ubuntu',
         logo: 'ubuntu',
+        isFrameWork: false,
+        nivel: 3
+    },
+    {
+        nome: 'React-Native/React',
+        logo: 'reactnative',
         isFrameWork: false,
         nivel: 3
     }

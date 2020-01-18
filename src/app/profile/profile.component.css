@@ -4,30 +4,7 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Playfair Display', serif;
 font-family: 'Slabo 27px', serif;
 */
-.card-experence{
-    position: relative;
-    width: 33%;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    
-}
-.card-experence > div{
-    
-    margin: 3% 3% 3% 0;
-    width: 280px;
-}
-.img-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 145px;
-}
-.img-fluid{
-    padding: 1%;
-    width: 225px;
-}
+
 
 .description{
     height: 75px;
@@ -38,14 +15,12 @@ font-family: 'Slabo 27px', serif;
     height: 140px;
     overflow: auto;
 }
-/* .card-experence > .ui-widget{
-    margin:10px
-} */
+
 .cad-content{
     font-family: 'Roboto Slab', serif;  
 }
 
-.container-btn-download{
+/* .container-btn-download{
     position: absolute;
     top:8px;
     right: 20px;
@@ -59,10 +34,10 @@ font-family: 'Slabo 27px', serif;
     height: 2em;
     text-align: center;
     cursor: pointer;
-}
-.btn-download-cv:hover{
+} */
+/* .btn-download-cv:hover{
     font-weight: bold;
-}
+} */
 
 
 
@@ -71,12 +46,12 @@ font-family: 'Slabo 27px', serif;
     ##Screen = B/w 320px to 479px
   */
   
-  @media (min-width: 320px) and (max-width: 545px) {
+  /* @media (min-width: 320px) and (max-width: 545px) {
     .container-btn-download{
         position: relative; 
         display: grid;
         place-items: center;
         margin-bottom: 3%;      
     }
-}
+} */
   
