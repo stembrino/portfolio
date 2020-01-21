@@ -1,20 +1,18 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-    <div class="logo">
-        <span routerLink="home">Fábio Carvalho Portfolio</span>
+    <div class="logo" routerLinkActive="active" routerLink="home">
+        <span>Fábio Carvalho Portfolio</span>
     </div>
-    <!-- <div class="logo-container" routerLink="home">
-        <img class="navbar-brand img-fluid" alt="Responsive image" src="assets/images/html-image.png">
-    </div> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-sm-row-reverse" id="navbarNav">
         <ul class="navbar-nav ">
-            <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="profile">Profile</a>
+            <li class="nav-item" routerLinkActive="active" routerLink="profile">
+                <a class="nav-link">Profile</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="message" >Send Message</a>
+            <li class="nav-item" routerLinkActive="active" routerLink="message">
+                <a class="nav-link">Send Message</a>
             </li>
             
         </ul>

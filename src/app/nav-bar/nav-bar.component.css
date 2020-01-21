@@ -11,9 +11,7 @@ font-family: 'Slabo 27px', serif;
 .navbar a:hover{
     font-weight:bold;
 }
-.active a:hover{
-    font-weight:unset;
-}
+
 .logo-container{
     position: relative;
     color:#fff;
@@ -29,14 +27,21 @@ font-family: 'Slabo 27px', serif;
     outline: none;
 }
 
-
+li:focus {
+    outline: 0;
+ }
 
 .active{
-    color:white;
-    text-decoration: underline;
+    border-bottom: 4px solid white;
+    
 }
 
+
 .logo{
+    min-height: 55px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'IM Fell Great Primer SC', serif;
     font-size: 20px;
     color:white;
@@ -46,6 +51,23 @@ font-family: 'Slabo 27px', serif;
     cursor: pointer;
     outline: none;
 }
+
+/* .navbar {  
+    padding: 0 .5rem;
+    height: 55px;
+} */
+.navbar { 
+    padding-bottom: 0;
+    padding-top:0;
+    min-height: 55px;    
+ }
+
+ul{min-height: 55px; }
+li{
+    min-height: 55px; 
+    display: flex;
+    align-items: center;
+} 
 
 
 

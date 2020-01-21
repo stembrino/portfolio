@@ -14,7 +14,6 @@ export class ExperiencesComponent implements OnInit {
 
   ngOnInit() {
     this.profile = this.profileService.getProfile()    
-    console.log(this.profile)
 
   }
 

@@ -1,28 +1,25 @@
 <p-virtualScroller [value]="certificateList" scrollHeight="350px" [itemSize]="">
     <p-header>Certifications & Courses</p-header>
     <ng-template pTemplate="item" let-certificate let-i="index">
-        <div class="ui-g content-certificate">            
-            <div class="ui-g-12 ui-md-6 ui-lg-3">                  
-                {{ certificate.name }}
+        <div class="ui-g content-certificate">
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                {{certificate.date}} - {{ certificate.name }}
             </div>
-            <div class="ui-g-12 ui-md-6 ui-lg-6">                  
+            <div class="ui-g-12 ui-md-6 ui-lg-6">
                 {{ certificate.description }}
-            </div>           
-            <div class="ui-g-12 ui-md-6 ui-lg-3">                  
-                <div (click)="chooseImage(certificate)" 
-                     class="img-expand" 
-                     data-toggle="modal" 
-                     data-target="#exampleModal"
-                     >
+            </div>
+            <div class="ui-g-12 ui-md-6 ui-lg-3">
+                <div (click)="chooseImage(certificate)" class="img-expand" data-toggle="modal"
+                    data-target="#exampleModal">
                     <img src="assets/images/expand.png">
                 </div>
             </div>
         </div>
-        
+
     </ng-template>
-    <p-footer>click on icon to open image</p-footer>
+    <p-footer><small><b>click on icon to open certificeate image</b></small></p-footer>
 </p-virtualScroller>
 
- <div *ngIf="clickModal">
-        <app-modal-img [certificateClick]="certificateClick"></app-modal-img>
- </div>
+<div *ngIf="clickModal">
+    <app-modal-img [certificateClick]="certificateClick"></app-modal-img>
+</div>
