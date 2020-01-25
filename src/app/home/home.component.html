@@ -4,11 +4,13 @@
         <div class="card card-content" >
             <div class="card-body">            
                 <div class="all-content-welcome">
-                    <div [@animation-title-news]="state"  class="welcome">welcome to my portfolio</div>
-                    <div [@animation-content-news]="state"  class="content-welcome">
-                        <li>Skills and certificates in "profile" button navigation bar</li>
-                        <li>Projects in the side bar</li>    
-                        <li>Give your opnion</li> 
+                    <div [@animation-content-news]="state"  class="content-welcome">                        
+                        <a (click)="showModal()" target="_blank" >
+                            <img src="assets/images/europass.jpg" style="width: 170px;">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/f%C3%A1bio-ribeiro-de-carvalho-b522a3156/">
+                            <img src="assets/images/linkedin.png" style="width: 100px;">
+                        </a>                        
                     </div>
                     
                 </div>
@@ -68,3 +70,21 @@
         </div>
     </div>
     </div>
+
+
+    <nz-modal
+      [(nzVisible)]="isVisible"
+      nzTitle="Select a Language"
+      (nzOnCancel)="handleCancel()"
+      (nzOnOk)="handleOk()"
+      [nzOkLoading]="isOkLoading"
+      [nzFooter]="null"
+      [nzBodyStyle]="{padding: '5px'}"
+    >
+        <div class="container-aux-modal">
+            <div class="container-modal-btn">
+                <button nz-button (click)='openPDF("En")' nzType="primary" [nzSize]="large" nzShape="circle"><span>En</span></button>
+                <button nz-button (click)='openPDF("Pt")' nzType="primary" [nzSize]="large" nzShape="circle"><span>Pt</span></button>    
+            </div>
+        </div>
+    </nz-modal>

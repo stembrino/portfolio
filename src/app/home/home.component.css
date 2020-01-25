@@ -62,13 +62,18 @@ a{
     
 }
 .content-welcome{
-    font-size: 1em;
+    /* font-size: 1em;
     margin-left: 5%;
-    margin-top: 2%;
+    margin-top: 2%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-.content-welcome>li{
-    list-style-type:circle;
+
+
+.content-welcome>a:hover{
+    box-shadow: 1px 1px 2px #a7a4a4;
 }
 
 .card-content{
@@ -79,6 +84,27 @@ a{
 
 .paginator{
     text-align: center;
-    margin-bottom: 8px;}
+    margin-bottom: 8px;
+}
 
+.container-aux-modal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-modal-btn{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.container-modal-btn span{
+    font-size: 22px;
+    font-weight: bold;
+}
 
+.ant-btn-circle, .ant-btn-circle-outline {
+    min-width: 70px;
+    height: 70px;
+}

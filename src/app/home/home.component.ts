@@ -3,6 +3,7 @@ import { NewsService } from '../services/news.service';
 import { News } from '../shared/news.mode';
 import { HttpEventType } from '@angular/common/http'
 import { trigger, state, style, animate, transition, keyframes } from '@angular/animations';
+import { HomeService } from '../services/home.service';
 
 
 
@@ -36,7 +37,7 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
     trigger('animation-content-news', [
       state('create', style({opacity: 1})),
       transition('void => create', [
-        style({opacity: 0, transform: 'translate(100px, 0)'}), //x e y // estilo do void
+        style({opacity: 0}), //x e y // estilo do void
         animate('2s 1.9s ease-in-out') //duracao, delay, aceleracao (ease)
       ])
     ]),
@@ -46,7 +47,9 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
 })
 export class HomeComponent implements OnInit {
   public newsList:News[] = []
-  constructor(private newService:NewsService) { }
+  constructor(private newService:NewsService, private homeService: HomeService ) { }
+
+
   public imgNewsModal:string = ''
   public contentNewsModal:string = ''
   public url:string = ''
@@ -55,6 +58,8 @@ export class HomeComponent implements OnInit {
   public numberOfItemPage = 3
   public page:News[]=[]
   public closeBar:boolean = false
+  public isVisible = false;
+  public isOkLoading = false;
   ngOnInit() {
     
 
@@ -99,6 +104,24 @@ export class HomeComponent implements OnInit {
     const end =  numberOfPage*this.numberOfItemPage
     this.page = this.newsList.slice( start, end)
     
+  }
+
+  public showModal(): void {
+    this.isVisible = true;
+  }
+
+  public handleOk(): void {
+    console.log('Button ok clicked!');
+    this.isVisible = false;
+  }
+  public handleCancel(): void {
+    this.isVisible = false;
+  }
+
+  public openPDF(language):void{
+    let codeLanguage:string = language === 'En'? this.homeService.getLanguageEn() : this.homeService.getLanguagePt()
+    window.open(codeLanguage, '_blank');
+  
   }
 
 
