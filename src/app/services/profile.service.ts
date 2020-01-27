@@ -18,7 +18,8 @@ export class ProfileService{
 
         PROFILE.EXPERIENCES.forEach((experience)=>{
             
-            profile.addExperiences(            
+            profile.addExperiences( 
+                experience.id,           
                 experience.nomeEmpresa,
                 experience.imagem,
                 experience.localidade,
@@ -27,7 +28,10 @@ export class ProfileService{
                 experience.descricao,
                 experience.dataInicio,
                 experience.dataTermino,
-                experience.area)
+                experience.area,
+                experience.open,
+                experience.iconType,
+                )
             
         })        
 

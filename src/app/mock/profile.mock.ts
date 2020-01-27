@@ -2,17 +2,21 @@
 let caminho = './assets/images/enterprises/'
 export const EXPERIENCES = [
     {
+        id:1,
         nomeEmpresa: 'Everis HPC',
         imagem: caminho+'everis.jpeg',   
-        localidade: 'Lisboa',   
+        localidade: 'Lisbon',   
         cargo: 'Developer Frontend Internship',    
         programacao: ['Java', 'Javascript','Angular'],    
         descricao: ['Support the team with developing web pages', 'Understand routine and work methodology','Application documentation review using office tools'],    
         dataInicio: '02/09/2019',   
         dataTermino: '02/12/2019',
-        area: 'programming'
+        area: 'programming',
+        open: false,
+        iconType: 'plus-circle',
     },
     {
+        id:2,
         nomeEmpresa: 'MHC Empreendimentos',   
         localidade: 'Macaé, Rio de Janeiro',      
         cargo: 'Assistance Payment',    
@@ -20,9 +24,12 @@ export const EXPERIENCES = [
         descricao: ['Assist in payment activities related to project operations developed'],
         dataInicio: '01/02/2015',   
         dataTermino: '01/11/2017',
-        area: 'business administration'
+        area: 'business administration',
+        open: false,
+        iconType: 'plus-circle',
     },
     {
+        id:3,
         nomeEmpresa: 'Lojas Americanas',   
         localidade: 'Rio de Janeiro',   
         imagem: caminho+'americanas.jpg',   
@@ -31,9 +38,12 @@ export const EXPERIENCES = [
         descricao: ['Support in store operations', 'Cashier', 'Activities of storeroom organization'],    
         dataInicio: '11/2013',   
         dataTermino: '08/2014',
-        area: 'business administration'
+        area: 'business administration',
+        open: false,
+        iconType: 'plus-circle',
     },
     {
+        id:4,
         nomeEmpresa: 'Casa & Vídeo Ltda',   
         localidade: 'Rio de Janeiro',   
         imagem: caminho+'casavideo.png',   
@@ -42,10 +52,13 @@ export const EXPERIENCES = [
         descricao: ['Monitoring of store activities', 'Preparation of weekly store performance reports'],    
         dataInicio: '09/2012',   
         dataTermino: '09/2013',
-        area: 'business administration'
+        area: 'business administration',
+        open: false,
+        iconType: 'plus-circle',
     },
     {
-        nomeEmpresa: 'Nicomex Logística Ltda',   
+        id:5,
+        nomeEmpresa: 'Nicomex Logística',   
         localidade: 'Rio de Janeiro',   
         imagem: caminho+'nicomex.png',   
         cargo: 'Account trainee',    
@@ -53,7 +66,9 @@ export const EXPERIENCES = [
         descricao: ['Data update in the accounting information system'],    
         dataInicio: '09/2012',   
         dataTermino: '09/2013',
-        area: 'business administration'
+        area: 'business administration',
+        open: false,
+        iconType: 'plus-circle',
     },
     
 
