@@ -25,5 +25,9 @@ export class ExperiencesComponent implements OnInit {
   
   }
 
+  public sendGoogleMaps(linkLocation):void{
+    // window.open(linkLocation, '_blank');
+  }
+
 
 }

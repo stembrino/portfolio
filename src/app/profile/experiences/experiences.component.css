@@ -63,12 +63,15 @@
     margin-left: 8px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
 }
 
 .footer-content{
     display: flex;
     height: 50px;
     box-shadow: 0 0 1px;
+    margin-top: 5px;
 }
 .position{
     height: 40px;

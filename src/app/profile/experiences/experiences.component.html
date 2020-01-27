@@ -33,8 +33,9 @@
                         </ul>
                     </div>
                     <div class="footer-content">
-                        <div class="location">
-                            Location: {{ experience.address }}
+                        <div class="location" (click)="sendGoogleMaps()">
+                            {{ experience.address }}
+                            <i nz-icon nzType="pushpin" nzTheme="fill"></i>
                         </div>                       
                     </div>
                 </div>
