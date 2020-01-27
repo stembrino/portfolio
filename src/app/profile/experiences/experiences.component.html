@@ -1,6 +1,6 @@
 <div class="container-card-experience">
     <div class="card-experence">            
-        <div *ngFor="let experience of profile.experiences" style="cursor: default;">
+        <div *ngFor="let experience of profile.experiences">
             <p-card>
                 <p-header>
                     <div class="header">
@@ -14,9 +14,14 @@
                             <br>
                             <small>({{ experience.area }})</small>
                         </div>
+                        <div class="logo" *ngIf="experience.image">
+                            <div>
+                                <img [src]='experience.image' class="img-fluid img-logo">
+                            </div>
+                        </div>
                     </div>
                 </p-header>
-                <div class="cad-content">
+                <div class="card-content" *ngIf="experience.open" >
                     <div class="position">
                         <span class="postion-text">Position:</span>{{ experience.position }}
                     </div>
@@ -27,20 +32,17 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <p-footer>
                     <div class="footer-content">
                         <div class="location">
-                            {{ experience.address }}
-                        </div>
-                        <div class="logo">
-                            <div *ngIf="experience.image">
-                                <img [src]='experience.image' class="img-fluid img-logo">
-                            </div>
-                        </div>
+                            Location: {{ experience.address }}
+                        </div>                       
                     </div>
-                </p-footer>
-    
+                </div>
+                    <div class="btn-open-info-card">
+                        <button nz-button nzType="primary" nzShape="round" [nzGhost]="true" style="display: flex;" (click)="openContentCard(experience.id)">
+                            <i nz-icon [nzType]="experience.iconType" nzTheme="outline"></i>
+                        </button>
+                    </div>                 
             </p-card>
         </div>
     </div>

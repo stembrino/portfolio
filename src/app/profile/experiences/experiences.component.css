@@ -12,10 +12,10 @@
     flex-wrap: wrap;
     width: 90%;    
 }
-.card-experence > div{
-    
-    margin: 3% 3% 3% 0;
-    width: 280px;
+.card-experence > div{    
+    margin: 10px 10px 0 0;
+    width: 300px;
+    cursor: default;
 }
 
 .img-container{
@@ -51,11 +51,12 @@
 }
 
 .logo{
-    width: 80px;
+    width: 25%;
+    background-color: #FFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 8px;
+    border-left: 1px solid #8080803d;
 }
 .location{
     width: 90%;
@@ -87,6 +88,15 @@
 ul {
     list-style: circle;
     padding-left: 2em;
-
-
  }
+
+ .card-content{
+    margin-bottom: 1em;
+ }
+
+.btn-open-info-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
